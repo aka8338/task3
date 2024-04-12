@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+y>
+   <header class="header">To-Do List Web App</header>
+   <div><select class="select" >
+    <option value="all">All</option>
+    <option value="completed">Completed</option>
+    <option value="incompleted">Incompleted</option>
+</select></div>
+   <div class="form-container"> <!-- Fixed the missing equal sign -->
+    <form class="form">
+        <label>Title</label>
+        <input type="text" class="small">
+        <textarea class="big" placeholder="Description"></textarea>
+        <button type="submit">Save</button>
+    </form>
+   </div>
+
+   <div class="list-div">
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Completed</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody class="task-list"></tbody>
+    </table>
+</div>
+
+<script src="script2.js"></script> <!-- Fixed the script tag -->
+</body>
+</html>

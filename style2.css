@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header {
+    position: absolute;
+    text-align: center; /* Align text to the center */
+   background-color: rgb(253, 238, 255);
+    color: black; /* Text color */
+    padding: 20px ; /* Add padding (top and bottom) */
+    width: 100%; /* Make the header span the full width of the viewport */
+    top: 0; /* Align the header to the top */
+
+   
+   
+  
+    font-size: 25px;    /* Set a high z-index to ensure the header stays on top of other content */
+}
+.form {
+    position: relative;
+    left: 35px;
+   
+    cursor: pointer;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add some padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.form label {
+    font-weight: bold; /* Bold label text */
+    margin-bottom: 10px; /* Add some space below each label */
+}
+
+.form .big {
+    position: relative;
+    background-color: #4a4291;
+    color: white;
+    font-weight: bold;
+    top: 25px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    word-wrap: break-word;
+    font-size: 20px;
+}
+
+.form .small{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: aqua;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.form label{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.form button {
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.form button:focus {
+    outline: none; /* Remove focus outline */
+}
+.select{
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border:white;
+    position:relative;
+    top: 20px;
+    left: 40px;
+    margin: 1rem;
+    width: 10rem;
+    height: 3.2rem;
+    cursor: pointer;
+    padding: 1rem;
+
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+.select:hover::after{
+    background-color: white;
+    color: rgb(255, 200, 0);
+}
+.list-div {
+    margin-top: 20px;
+    float:right; /* Display the table to the right */
+}
+
+table {
+    width: 500px; /* Fixed width for the table */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+th:first-child,
+td:first-child {
+    width: 30%;
+}
+
+th:last-child,
+td:last-child {
+    width: 20%;
+    text-align: center;
+}
+
+.delete-btn {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: poi* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-image: url('back.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .header {
+        position: absolute;
+        text-align: center;
+        background-color: rgb(253, 238, 255);
+        color: black;
+        padding: 20px;
+        width: 100%;
+        top: 0;
+        font-size: 25px;
+    }
+    
+    .container {
+        display: flex; /* Use flexbox layout */
+    }
+    
+    .form {
+        flex: 1; /* Take up remaining space */
+        padding: 20px;
+    }
+    
+    .form label {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .form .big {
+        background-color: #4a4291;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: vertical;
+        overflow-y: auto;
+        word-wrap: break-word;
+        font-size: 20px;
+    }
+    
+    .form .small {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        background-color: aqua;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .form button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .form button:hover {
+        background-color: #0056b3;
+    }
+    
+    .form button:focus {
+        outline: none;
+    }
+    
+    .list-div {
+        margin-top: 20px;
+        margin-left: 20px; /* Add some space between the form and the table */
+        flex: 1; /* Take up remaining space */
+    }
+    
+    table {
+        width: 100%; /* Take up full width of the container */
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        text-align: right;
+    }
+    
+    th {
+        background-color: #f2f2f2;
+    }
+    
+    th:first-child,
+    td:first-child {
+        width: 30%;
+    }
+    
+    th:last-child,
+    td:last-child {
+        width: 20%;
+        text-align: center;
+    }
+    
+    .delete-btn {
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .delete-btn:hover {
+        background-color: #d9534f;
+    }
+    
+    .task-list {
+        background-color: white;
+        color: black;
+    }
+    nter;
+}
+
+.delete-btn:hover {
+    background-color: #d9534f;
+}
+.task-list {
+    background-color: white; /* Set background color to white */
+    color: black; /* Set text color to black */
+}
